@@ -3,7 +3,7 @@ import json
 
 # To simplify, I saved the JSON example on a text file and loaded using “json” module.
 file_handler = open("json_example.txt")
-json_structure = json.load(text_raw) # This method execute the .read() and parsed the JSON to native Python.
+json_structure = json.load(file_handler) # This method execute the .read() and parsed the JSON to native Python.
 
 # This will load the JSON and convert its values to native Python types.
 json_structure = simplejson.load(file_handler)
