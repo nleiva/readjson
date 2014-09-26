@@ -21,4 +21,4 @@ first_interface_index = first_row[2]
 
 # To print a row with the header, you need to access both dicts at the same time.
 for column_index,column_name in enumerate(table_headers):
-  print("%s: %s" % (column_name, first_row[column_index])) # Python3 syntax for “print”. If yours is older, remove the outer parenthesis.
+  print("{}: {}".format(column_name, first_row[column_index]))# ython3 syntax for “print”. If yours is older, remove the outer parenthesis.
