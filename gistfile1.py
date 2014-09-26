@@ -9,9 +9,9 @@ json_structure = json.load(file_handler)
 
 # At first level, your structure is a dictionary with strings as keys, and other dictionaries as values.
 # This is using the ‘report’ key to map the columns names of the table (table header), and ‘data’ key to map each row in the table (actually the data).
-table_name = json_structure["report"]["name"]
-table_headers = json_structure["report"]["header"] # Dict uses values as keys.
-table_rows = json_structure["report"]["data"] # Dict uses values as keys.
+table_name = json_structure["report"]["name"] # Dict uses values as keys.
+table_headers = json_structure["report"]["header"]
+table_rows = json_structure["report"]["data"]
 
 # To access the first row of the table, you just need to access the first element of the table_row list.
 first_row = table_rows[0] # Lists uses numbers as index.
